@@ -276,6 +276,22 @@
     },
 
     /**
+     * The `countString` method works mostly like the `live` method, but no events are
+     * bound, the functionality is only executed once.
+     *
+     * @param   {String}        target   All elements that should be counted.
+     *
+     * @param   {Object}        [options]  An object to modify Countable's
+     *                                     behaviour.
+     *
+     * @return  {Object}    Returns the result.
+     */
+
+    countString: function (target, options) {
+      return count(target, options)
+    },
+	  
+    /**
      * The `enabled` method checks if the live-counting functionality is bound
      * to an element.
      *
